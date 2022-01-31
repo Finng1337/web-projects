@@ -1,0 +1,141 @@
+/* General setup */
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  margin: 0 auto;
+  min-width: 1000px;
+  max-width: 1400px;
+}
+
+/* Layout */
+
+section {
+  float: left;
+  width: 50%;
+}
+
+aside {
+  float: left;
+  width: 30%;
+}
+
+nav {
+  float: left;
+  width: 20%;
+}
+
+footer {
+  clear: both;
+}
+
+header, section, aside, nav, footer {
+  padding: 20px;
+}
+
+/* header and footer */
+
+header, footer {
+  border-top: 5px solid #a66;
+  border-bottom: 5px solid #a66;
+}
+
+/* WRITE YOUR CODE BELOW HERE */
+
+/* fonts */
+body {
+  font-family: "Merriweather", serif;
+  font-size: 1.6rem;
+}
+
+h1,
+h2 {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 2.5rem;
+}
+
+/* text styling */
+body {
+  line-height: 1.5;
+  letter-spacing: 1px;
+  word-spacing: 3px;
+}
+
+h1,
+h2 {
+  letter-spacing: 3px;
+}
+
+h1 {
+  text-align: center;
+}
+
+section h2 + p {
+  text-indent: 20px;
+}
+
+/* links */
+a[href^="https"]{
+  background: url(external-link-52.png) no-repeat;
+  background-size: 1em;
+  background-position: center right;
+  padding-right: 1.1em;
+}
+
+a:link{
+  color: #a66;
+}
+
+a:visited {
+  color: rgb(83, 48, 48);
+}
+
+a:hover,
+a:focus {
+  color: rgb(226, 123, 123);
+  text-decoration: none;
+}
+
+a:focus {
+  outline: none;
+}
+
+a:active {
+  color: white;
+  background-color: rgb(226, 123, 123);
+}
+
+/* menu */
+nav li {
+  list-style-type: none;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  font-family: 'Ubuntu', sans-serif;
+  border: 3px solid #a66;
+  margin: 1rem;
+  padding: 1rem;
+  border-radius: 1rem;
+}
+
+nav li a:link,
+nav li a:visited {
+  color: #a66;
+  text-decoration: none;
+}
+
+nav li a:hover,
+nav li a:focus {
+  color: rgb(226, 123, 123);
+  border-color: rgb(226, 123, 123);
+}
+
+nav li a:focus {
+  outline: none;
+}
