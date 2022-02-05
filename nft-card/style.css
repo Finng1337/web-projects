@@ -1,0 +1,127 @@
+/* GENERAL COLORS AND FONTS */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  html {
+    font-size: 18px;
+  }
+
+  body {
+    background-color: hsl(217, 54%, 11%);
+    color: hsl(215, 51%, 70%);
+    font-family: "Outfit", sans-serif;
+    font-weight: 300;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  
+  h2 {
+    color: white;
+    font-weight: 400;
+  }
+
+  em {
+    color: white;
+    font-style: normal;
+  }
+  .price {
+    color: hsl(178, 100%, 50%);
+    font-weight: 600;
+  }
+
+  .card {
+    background-color: hsl(216, 50%, 16%);
+  }
+
+  .content {
+    border-bottom: 3px solid hsl(215, 32%, 27%);
+  }
+
+  .content img {
+    max-width: 100%;
+    border-radius: 10px;
+  }
+/* LAYOUT */
+  p {
+    line-height: 1.5;
+  }
+
+  .card {
+    width: 90%;
+    max-width: 375px;
+    padding: 1.2rem;
+    border-radius: 20px;
+  }
+
+  .content {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 1rem;
+  }
+
+  .image {
+    position: relative;
+    display: flex;
+  }
+  
+  .details {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+
+  .details svg:nth-of-type(2) {
+    margin-left: auto;
+  }
+
+  .price {
+    margin-left: 5px;
+  }
+
+  .countdown {
+    margin-left: 5px;
+  }
+  
+  .author {
+    display: flex;
+    align-items: center;
+    padding: 1rem 0;
+  }
+
+  .avatar {
+    height: 2rem;
+    width: 2rem;
+    border: 1px solid white;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+/* VISUAL */
+  .card {
+    box-shadow:0 30px 30px hsl(215, 55%, 6%);
+  }
+
+  .image svg {
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    padding: calc(50% - 24px);
+    border-radius: 10px;
+    background-color: hsla(215, 51%, 70%, 0.7);
+    opacity: 0;
+    transition: opacity 0.5s;
+  }
+
+  .image svg:hover {
+    opacity: 1;
+  }
+
+
