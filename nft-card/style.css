@@ -20,8 +20,12 @@
     align-items: center;
     min-height: 100vh;
   }
+
+  main {
+    background-color: hsl(216, 50%, 16%);
+  }
   
-  h2 {
+  h1 {
     color: white;
     font-weight: 400;
   }
@@ -33,10 +37,6 @@
   .price {
     color: hsl(178, 100%, 50%);
     font-weight: 600;
-  }
-
-  .card {
-    background-color: hsl(216, 50%, 16%);
   }
 
   .content {
@@ -52,9 +52,9 @@
     line-height: 1.5;
   }
 
-  .card {
+  main {
     width: 90%;
-    max-width: 375px;
+    max-width: 350px;
     padding: 1.2rem;
     border-radius: 20px;
   }
@@ -62,12 +62,13 @@
   .content {
     display: grid;
     grid-template-columns: 1fr;
-    row-gap: 1rem;
+    row-gap: 0.5rem;
   }
 
   .image {
     position: relative;
     display: flex;
+    flex-direction: column;
   }
   
   .details {
@@ -103,7 +104,7 @@
     margin-right: 10px;
   }
 /* VISUAL */
-  .card {
+  main {
     box-shadow:0 30px 30px hsl(215, 55%, 6%);
   }
 
