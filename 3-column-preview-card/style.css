@@ -5,7 +5,106 @@
 }
 
 html {
-    font-size: 15px;
     box-sizing: border-box;
+    word-break: keep-all;
+}
+/* FONTS, TEXT */
+html {
+    font-size: 15px;
 }
 
+p,a {
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+h2 {
+    font-family: 'Big Shoulders Display', cursive;
+    font-size: 3rem;
+    color: hsl(0, 0%, 95%);
+}
+
+a {
+    color: var(--bg-color);
+}
+
+p {
+    color: hsla(0, 0%, 100%, 0.75);
+    line-height: 1.8;
+}
+/* COLORS, STYLING */
+
+body {
+    background-color: hsl(0, 0%, 95%);
+}
+
+main {
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+article {
+    padding: 3rem;
+}
+
+a {
+    text-decoration: none;
+    border: 3px solid hsl(0, 0%, 95%);
+    border-radius: 2rem;
+    background-color: hsl(0, 0%, 95%);
+    padding: 1rem 2rem;
+    transition: background-color 0.5s, color 0.5s;
+}
+
+a:hover {
+    background-color: transparent;
+    color: hsl(0, 0%, 95%);
+}
+
+.sedan {
+    --bg-color: hsl(31, 77%, 52%);
+    background-color: hsl(31, 77%, 52%);
+}
+
+.suv {
+    --bg-color: hsl(184, 100%, 22%);
+    background-color: hsl(184, 100%, 22%);
+}
+
+.luxury {
+    --bg-color: hsl(179, 100%, 13%);
+    background-color: hsl(179, 100%, 13%);
+}
+/* LAYOUT */
+body {
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+main {
+    width: 90%;
+    max-width: 950px;
+    min-height: 60vh;
+    display: flex;
+    flex-direction: row;
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2rem;
+}
+
+a {
+    margin: auto 0 0 0;
+}
+
+@media screen and (max-width: 800px) {
+    main {
+        margin-top: 10vh;
+        max-width: 350px;
+        flex-direction: column;
+    }
+}
