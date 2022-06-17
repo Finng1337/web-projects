@@ -1,0 +1,82 @@
+/* GENERAL SETUP, COLORS AND FONTS */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+    font-family: 'Roboto Mono', monospace;
+    background-color: white;
+}
+
+body {
+    font-size: 1.6rem;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.projectCARS a {
+    background-color: black;
+    color: hsl(0, 0%, 95%);
+}
+
+.projectNFT a {
+    background-color: white;
+    color: hsl(217, 54%, 11%);
+}
+
+.ending {
+    font-size: 2rem;
+}
+
+.projectCARS {
+    background-color: hsl(0, 0%, 95%);
+}
+.projectNFT {
+    background-color: hsl(217, 54%, 11%);
+    color: white;
+}
+
+/* LAYOUT */
+
+article {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    margin: 1rem 0;
+    border-radius: 1.2rem;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 90%;
+    max-width: 96rem;
+}
+
+.about {
+    display: flex;
+    flex-direction: column;
+}
+
+img {
+    max-width: 100%;
+    object-fit: contain;
+    border-radius: 1.2rem 0 0 1.2rem;
+}
+
+a {
+    margin-top: auto;
+    margin-bottom: 2rem;
+    margin-right: 2rem;
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+    align-self: flex-end;
+}
