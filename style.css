@@ -20,15 +20,33 @@ body {
 a {
     text-decoration: none;
     text-transform: uppercase;
+    transition: background-color 0.5s, color 0.5s;
+}
+
+.about {
+    text-align: start;
+    line-height: 1.6;
+}
+
+.projectCARS a:hover, .projectCARS a:focus {
+    background-color: transparent;
+    color: black;
+}
+
+.projectNFT a:hover, .projectNFT a:focus {
+    background-color: transparent;
+    color: white;
 }
 
 .projectCARS a {
     background-color: black;
+    border: .3rem solid black;
     color: hsl(0, 0%, 95%);
 }
 
 .projectNFT a {
     background-color: white;
+    border: .3rem solid white;
     color: hsl(217, 54%, 11%);
 }
 
@@ -64,19 +82,25 @@ main {
 .about {
     display: flex;
     flex-direction: column;
+    padding: 1rem;
 }
 
 img {
     max-width: 100%;
     object-fit: contain;
-    border-radius: 1.2rem 0 0 1.2rem;
+    border-radius: inherit;
 }
 
 a {
     margin-top: auto;
-    margin-bottom: 2rem;
-    margin-right: 2rem;
     padding: 1rem 2rem;
     border-radius: 1rem;
     align-self: flex-end;
+}
+
+@media screen and (max-width: 900px) {
+    article {
+        grid-template-columns: none;
+        grid-template-rows: 1fr auto;
+    }
 }
