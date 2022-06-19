@@ -64,6 +64,10 @@ a {
 
 /* LAYOUT */
 
+header {
+    margin: 1rem 0;
+}
+
 article {
     display: grid;
     grid-template-columns: 1fr 2fr;
@@ -96,6 +100,10 @@ a {
     padding: 1rem 2rem;
     border-radius: 1rem;
     align-self: flex-end;
+}
+
+.ending {
+    margin: 1rem 0;
 }
 
 @media screen and (max-width: 900px) {
