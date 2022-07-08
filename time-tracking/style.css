@@ -1,0 +1,157 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* TEXT */
+body {
+    font-size: 18px;
+    font-family: 'Rubik', sans-serif;
+}
+
+h1 {
+    font-weight: 300;
+    font-size: inherit;
+}
+
+strong {
+    font-weight: 400;
+    font-size: 2rem;
+}
+
+h2 {
+    font-weight: 500;
+    font-size: inherit;
+}
+/* COLORS */
+
+body {
+    background-color: hsl(226, 43%, 10%);
+    color: hsl(236, 100%, 87%);
+}
+
+h2,
+strong,
+.active {
+    color: white;
+}
+
+.profile img {
+    border-color: white;
+}
+
+.menu,
+.content {
+    background-color: hsl(235, 46%, 20%);
+}
+.profile {
+    background-color: hsl(246, 80%, 60%);
+}
+
+.content:hover {
+    background-color: hsl(235, 45%, 61%);
+}
+
+li:hover {
+    color: white;
+}
+
+.work {
+    background-color: hsl(15, 100%, 70%);
+}
+
+.play {
+    background-color: hsl(195, 74%, 62%);
+    background-image: url("images/icon-play.svg");
+    background-repeat: no-repeat;
+    background-position: 90% top;
+}
+
+.study {
+    background-color: hsl(348, 100%, 68%);
+}
+
+.exercise {
+    background-color: hsl(145, 58%, 55%);
+}
+
+.social {
+    background-color: hsl(264, 64%, 52%);
+}
+
+.selfCare {
+    background-color: hsl(43, 84%, 65%);
+}
+
+.iconMore {
+    background-image: url("images/icon-ellipsis.svg");
+}
+/* SIZING */
+
+.profile img {
+    border-width: .2rem;
+    border-radius: 50%;
+    border-style: solid;
+}
+
+body {
+    min-height: 100vh;
+}
+
+main {
+    max-width: 1000px;
+    width: 90%;
+}
+
+section,
+.content,
+.profile {
+    border-radius: 1rem;
+}
+
+.content {
+    height: 80%;
+    width: 100%;
+}
+
+.iconMore {
+    width: 21px;
+    height: 5px;
+}
+
+/* LAYOUT */
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr 1fr;
+    gap: 2rem;
+}
+
+.menu {
+    grid-row: 1 / 3;
+}
+
+.stats {
+    position: relative;
+}
+
+.content {
+    position: absolute;
+    bottom: 0;
+}
+
+li {
+    list-style-type: none;
+}
+
+.iconMore {
+    display: inline-block;
+}
