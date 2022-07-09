@@ -9,6 +9,7 @@ function changeOption(option) {
             document.querySelector('.active').removeAttribute('class');
         }
         option.setAttribute('class', 'active');
+        removeData();
         fetch('data.json').then(response => response.json()).then(json => printData(json, option.textContent));
     }
 }
@@ -21,5 +22,15 @@ function printData(jsonFile, option) {
         previous.textContent = `Last ${option} - ${jsonFile[i].timeframes[option.toLowerCase()].previous}hrs`;
         stats[i].appendChild(current);
         stats[i].appendChild(previous);
+    }
+}
+function removeData() {
+    const currentStats = document.querySelectorAll('.content strong');
+    const previousStats = document.querySelectorAll('.content p');
+    for(const currentStat of currentStats) {
+        currentStat.remove();
+    }
+    for(const previousStat of previousStats) {
+        previousStat.remove();
     }
 }
