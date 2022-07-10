@@ -10,7 +10,7 @@ function changeOption(option) {
         }
         option.setAttribute('class', 'active');
         removeData();
-        fetch('data.json').then(response => response.json()).then(json => printData(json, option.textContent));
+        fetch('data.json').then(response => response.json()).then(json => printData(json, option.textContent.toLowerCase()));
     }
 }
 function printData(jsonFile, option) {
@@ -19,9 +19,20 @@ function printData(jsonFile, option) {
         const current = document.createElement('strong');
         const previous = document.createElement('p');
         const container = document.createElement('div');
+        let interval;
+        switch(option) {
+            case 'daily' :
+                interval = 'day';
+                break;
+            case 'weekly' :
+                interval = 'week';
+                break;
+            case 'monthly' :
+                interval = 'month';
+        }
         container.setAttribute('class', 'flex');
-        current.textContent = `${jsonFile[i].timeframes[option.toLowerCase()].current}hrs`;
-        previous.textContent = `Last ${option} - ${jsonFile[i].timeframes[option.toLowerCase()].previous}hrs`;
+        current.textContent = `${jsonFile[i].timeframes[option].current}hrs`;
+        previous.textContent = `Last ${interval} - ${jsonFile[i].timeframes[option].previous}hrs`;
         container.appendChild(current);
         container.appendChild(previous);
         stats[i].appendChild(container);
