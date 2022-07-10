@@ -18,19 +18,20 @@ function printData(jsonFile, option) {
     for(let i = 0; i < 6; i++) {
         const current = document.createElement('strong');
         const previous = document.createElement('p');
+        const container = document.createElement('div');
+        container.setAttribute('class', 'flex');
         current.textContent = `${jsonFile[i].timeframes[option.toLowerCase()].current}hrs`;
         previous.textContent = `Last ${option} - ${jsonFile[i].timeframes[option.toLowerCase()].previous}hrs`;
-        stats[i].appendChild(current);
-        stats[i].appendChild(previous);
+        container.appendChild(current);
+        container.appendChild(previous);
+        stats[i].appendChild(container);
     }
 }
+/*
 function removeData() {
-    const currentStats = document.querySelectorAll('.content strong');
-    const previousStats = document.querySelectorAll('.content p');
-    for(const currentStat of currentStats) {
-        currentStat.remove();
-    }
-    for(const previousStat of previousStats) {
-        previousStat.remove();
+    const stats = document.querySelectorAll('.content .flex');
+    for(const stat of stats) {
+        stat.remove();
     }
 }
+*/
