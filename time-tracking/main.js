@@ -27,11 +27,9 @@ function printData(jsonFile, option) {
         stats[i].appendChild(container);
     }
 }
-/*
 function removeData() {
     const stats = document.querySelectorAll('.content .flex');
     for(const stat of stats) {
         stat.remove();
     }
 }
-*/
