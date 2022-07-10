@@ -28,12 +28,20 @@ a {
     line-height: 1.6;
 }
 
-.projectCARS a:hover, .projectCARS a:focus {
+.projectCARS a:hover,
+.projectCARS a:focus {
     background-color: transparent;
     color: black;
 }
 
-.projectNFT a:hover, .projectNFT a:focus {
+.projectNFT a:hover,
+.projectNFT a:focus {
+    background-color: transparent;
+    color: white;
+}
+
+.projectTracking a:hover,
+.projectTracking a:focus {
     background-color: transparent;
     color: white;
 }
@@ -50,6 +58,12 @@ a {
     color: hsl(217, 54%, 11%);
 }
 
+.projectTracking a {
+    background-color: white;
+    border: .3rem solid white;
+    color: hsl(226, 43%, 10%);
+}
+
 .ending {
     font-size: 2rem;
 }
@@ -57,8 +71,14 @@ a {
 .projectCARS {
     background-color: hsl(0, 0%, 95%);
 }
+
 .projectNFT {
     background-color: hsl(217, 54%, 11%);
+    color: white;
+}
+
+.projectTracking {
+    background-color: hsl(226, 43%, 10%);
     color: white;
 }
 

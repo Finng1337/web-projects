@@ -169,6 +169,10 @@ li {
         margin-bottom: 0;
     }
 
+    .statHeader {
+        margin-bottom: 2rem;
+    }
+
 }
 
 /* LAYOUT */
