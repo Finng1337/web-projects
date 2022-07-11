@@ -31,6 +31,10 @@ h2 {
         font-size: 1.8rem;
         white-space: nowrap;
     }
+
+    p {
+        font-size: 1rem;
+    }
 }
 /* COLORS */
 
@@ -168,11 +172,6 @@ li {
         margin-right: 1rem;
         margin-bottom: 0;
     }
-
-    .statHeader {
-        margin-bottom: 2rem;
-    }
-
 }
 
 /* LAYOUT */
@@ -225,7 +224,7 @@ li {
 @media screen and (max-width: 900px) {
     main {
         grid-template-columns: 1fr;
-        grid-template-rows: repeat(7, 1fr);
+        grid-template-rows: repeat(22, 1fr);
     }
 
     .flex {
@@ -234,6 +233,10 @@ li {
     }
 
     .menu {
-        grid-row: 1;
+        grid-row: span 4;
+    }
+
+    .stats {
+        grid-row: span 3;
     }
 }
