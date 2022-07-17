@@ -2,7 +2,7 @@
   "name": "travel-journal",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://finng1337.github.io/web-projects/travel-journal",
+  "homepage": "https://finng1337.github.io/web-projects/travel-journal/build",
   "dependencies": {
     "-": "^0.0.1",
     "@testing-library/jest-dom": "^5.16.4",
