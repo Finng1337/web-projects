@@ -32,21 +32,14 @@ html {
 
 /*COLORS*/
 
-.projectTracking a:hover,
-.projectTracking a:focus {
-  background-color: transparent;
-  color: white;
-}
-
-.projectTracking a {
-  background-color: white;
-  color: hsl(226, 43%, 10%);
+.card-siteLink {
+  border-style: solid;
 }
 
 /*SIZING*/
 
 .card-siteLink {
-  border-radius: .3rem;
+  border-radius: .5rem;
   margin-top: auto;
   padding: .5rem 1.2rem;
   align-self: flex-end;
