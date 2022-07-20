@@ -1,0 +1,102 @@
+/*GENERAL SETUP*/
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/*TEXT*/
+
+html {
+  font-family: 'Roboto Mono', monospace;
+}
+
+.title {
+  text-align: center;
+}
+
+.ending {
+  font-size: 1.25rem;
+}
+
+.card-siteLink {
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: background-color 0.5s, color 0.5s;
+}
+
+.card-about {
+  line-height: 1.6;
+}
+
+/*COLORS*/
+
+.projectTracking a:hover,
+.projectTracking a:focus {
+  background-color: transparent;
+  color: white;
+}
+
+.projectTracking a {
+  background-color: white;
+  color: hsl(226, 43%, 10%);
+}
+
+/*SIZING*/
+
+.card-siteLink {
+  border-radius: .3rem;
+  margin-top: auto;
+  padding: .5rem 1.2rem;
+  align-self: flex-end;
+}
+
+nav {
+  margin: 1rem 0;
+}
+
+article {
+  margin-block: 0.6rem;
+  border-radius: 1rem;
+  width: 90%;
+  max-width: 60rem;
+}
+
+.card-about {
+  padding: .8rem;
+}
+
+.ending {
+  margin: 1rem 0;
+}
+
+.card-preview {
+  max-width: 100%;
+  object-fit: contain;
+  border-radius: 1rem 0 0 1rem;
+}
+
+/* LAYOUT */
+
+article {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card-about {
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (max-width: 900px) {
+  article {
+    grid-template-columns: none;
+    grid-template-rows: 1fr auto;
+  }
+}
