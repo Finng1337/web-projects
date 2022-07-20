@@ -93,4 +93,8 @@ main {
     grid-template-columns: none;
     grid-template-rows: 1fr auto;
   }
+
+  .card-preview {
+    border-radius: 1rem 1rem 0 0;
+  }
 }
